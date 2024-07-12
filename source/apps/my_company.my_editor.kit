@@ -20,13 +20,13 @@ template_name = "kit_base_editor"
 "omni.kit.variant.editor" = {}
 "omni.kit.stage_column.variant" = {}
 
-# #XR Extensions
+# # #XR Extensions
 # "omni.kit.xr.example.usd_scene_ui" = {}
 # "omni.kit.xr.core" = {}
 # "omni.kit.xr.ui.config.metaquest" = {}
 # "omni.kit.xr.profile.tabletar" = {}
 # "omni.kit.xr.profile.vr" = {}
-
+# "omni.kit.xr.profile.ar" = {}
 
 # Layout capabilities
 "omni.app.setup" = {}
@@ -113,7 +113,12 @@ exts."omni.rtx.window.settings".window_menu = "Window" # Where to put the render
 exts."omni.kit.viewport.menubar.lighting".defaultRigIgnorePattern = "" # Allows auto light rig with anon layers
 exts."omni.kit.viewport.window".windowMenu.entryCount = 1
 exts."omni.kit.viewport.window".windowMenu.label="" # Put Viewport menuitem under Window menu
+
 app.content.emptyStageOnStart = true #added with extensions
+
+app.kit.editor.setup = true
+app.layout.default = "${my_company.my_app.resources}/layouts/layout.json"
+
 
 renderer.gpuEnumeration.glInterop.enabled = false # Improves startup speed.
 renderer.asyncInit = true # Don't block while renderer inits

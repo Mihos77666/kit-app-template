@@ -7,5 +7,6 @@ project_ext (ext)
         { "data", ext.target_dir.."/data" },
         { "docs", ext.target_dir.."/docs" },
         { "my_company", ext.target_dir.."/my_company" },
+        { "layouts", ext.target_dir.."/layouts" },
 
     }
